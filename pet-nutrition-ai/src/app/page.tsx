@@ -6,6 +6,7 @@ import { SearchResults } from "@/components/SearchResults";
 import { IngredientList } from "@/components/IngredientList";
 import { NutritionSummary } from "@/components/NutritionSummary";
 import { USDAFoodItem } from "@/types/usda";
+import { ChatInterface } from "@/components/ChatInterface";
 
 export default function Home() {
   const [searchResults, setSearchResults] = useState<USDAFoodItem[]>([]);
@@ -34,6 +35,9 @@ export default function Home() {
           <NutritionSummary />
           <IngredientList />
         </div>
+      </div>
+      <div className="mt-8 border-t pt-8">
+        <ChatInterface />
       </div>
     </div>
   );
